@@ -17,12 +17,18 @@
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
-	"plugins": [
-		"react",
-		"@typescript-eslint",
-		"prettier"
-	],
+	"plugins": ["react", "@typescript-eslint", "prettier"],
 	"rules": {
+		"max-len": [
+			"error",
+			{
+				"code": 100,
+				"ignoreComments": true,
+				"ignoreStrings": true,
+				"ignoreUrls": true
+			}
+		],
+		"semi": ["error", "always"],
 		"prettier/prettier": [
 			"error",
 			{
